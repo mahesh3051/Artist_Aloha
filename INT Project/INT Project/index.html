@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artist Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo">AA<span>.</span></a>
+    <div class="menuToggle" onclick="toggleMenu();">
+    </div>
+    <ul class="navigation">
+      <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+      <li><a href="#about" onclick="toggleMenu();">About</a> </li>
+      <li><a href="#artist" onclick="toggleMenu();">Artists</a></li>
+      <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+    </ul>
+  </header>
+  <section class="banner" id="banner">
+    <div class="content">
+      <h2>Artist Aloha</h2>
+      <p> The Artist
+        is one who is not satisfied by the lies of society
+        nor have they ever been,
+        nor will they ever be.
+
+        The Artist
+        is one who reflects back the so carelessly discarded toxins of society
+        so has it always been,
+        so shall it always be.
+
+        The Artist
+        is not satisfied with what has been created, no matter the beauty
+        so must it be
+        for more beauty to be made.The Artist
+        is a Prophet
+        of the Godself.</p>
+      <a href="#about" class="btn">Explore</a>
+    </div>
+
+  </section>
+  <section class="about" id="about">
+    <div class="row">
+      <div class="col50">
+        <h2 class="titleText"><span>A</span>bout Us</h2>
+        <p>Too many taps on Google search, costing your precious time, all messed up data, and then you find your desired information.
+          <br>We Artist Aloha, aspire to provide all possible information about creative artists under one roof. We present the information in a best possible way which can be interpreted even by a layman.
+          <br>
+            On one go we provide multiple profiles of gaints of art We are always ready to take the queries of people reaching out our website. We put everything we got to provide best and accurate information about your favourite artists. We mentioned every other detail of each and every gaints. We assure you best reading experience and visual feast from our Artist Aloha !!</p>
+
+      </div>
+      <div class="col50">
+        <div class="imgBx">
+          <img src="logo.jpg" alt="">
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  </section>
+  <section class="artist" id="artist">
+    <div class="title">
+      <h2 class="titleText"><span>A</span>rtists</h2>
+      <p>Famous Artists Around The World</p>
+    </div>
+    <div class="content">
+      <div class="box">
+        <div class="imgBx">
+          <img src="samantha.jpg" alt="">
+        </div>
+        <div class="text">
+          <h3><a href="sam.html" class="profile">Samantha Keely Smith</a></h3>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imgBx">
+          <img src="albert.jpg" alt="">
+        </div>
+        <div class="text">
+          <h3><a href="albert.html" class="profile">Albert Oehlen</a></h3>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imgBx">
+          <img src="frank.jpg" alt="">
+        </div>
+        <div class="text">
+          <h3><a href="frank.html" class="profile">Frank Bowling</a></h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class="title">
+      <h2 class="titleText"><span>C</span>ontact Us</h2>
+      <p>We appreciate your support. Feel free to contact us.</p>
+    </div>
+    <div class="contactForm">
+      <h3>Send Message</h3>
+      <div class="inputBox">
+        <input type="text" placeholder="Name">
+      </div>
+      <div class="inputBox">
+        <input type="text" placeholder="Email">
+      </div>
+      <div class="inputBox">
+        <textarea placeholder="Name"></textarea>
+      </div>
+      <div class="inputBox">
+        <input type="submit" value="Send">
+      </div>
+    </div>
+  </section>
+
+  <div class="copyrightText">
+    <p>Copyright 2020  <a href="#">ArtistAloha</a>. All Rights Reserved </p>
+  </div>
+
+  <script type="text/javascript">
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+    function toggleMenu(){
+      const menuToggle = document.querySelector('.menuToggle');
+      const navigation = document.querySelector('.navigation');
+      menuToggle.classList.toggle('active');
+      navigation.classList.toggle('active');
+    }
+  </script>
+
+</body>
+
+</html>
